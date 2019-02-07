@@ -1,7 +1,6 @@
 <?php
 $board=array();
 require_once("app/Classes/play.php");
-//require dirname(dirname(__FILE__)).DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.'autoload.php';
 
 use PHPUnit\Framework\TestCase;
 class Jeu_coup_Test extends TestCase
