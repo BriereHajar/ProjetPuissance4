@@ -1,6 +1,5 @@
 <?php
 require_once("app/Model/DAO.php");
-//require dirname(dirname(__FILE__)).DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.'autoload.php';
 
 use PHPUnit\Framework\TestCase;
 class ModelGameTest extends TestCase
