@@ -1,7 +1,6 @@
 <?php
 $board=array();
 require_once("app/Classes/init.php");
-//require dirname(dirname(__FILE__)).DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.'autoload.php';
 
 use PHPUnit\Framework\TestCase;
 class initialisation_plateau_Test extends TestCase
