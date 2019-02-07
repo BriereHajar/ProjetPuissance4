@@ -4,7 +4,6 @@
  $board=array();
  $turn=1;
 require_once("app/Classes/winner.php");
-//require dirname(dirname(__FILE__)).DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.'autoload.php';
 
 use PHPUnit\Framework\TestCase;
 class Coup_gagnant_Test extends TestCase
