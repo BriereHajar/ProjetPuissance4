@@ -2,10 +2,10 @@
 
 class DAO
 {
-    private $host = "uf63wl4z2daq9dbb.chr7pe7iynqr.eu-west-1.rds.amazonaws.com";
-    private $db = "ywspsa7m8cj26wtj";
-    private $user = "qs9x7pz7kmxhd5yg";
-    private $pass = "iz1bcx0zet1kxp2j";
+    private $host = "localhost";
+    private $db = "id8668068_puissance4";
+    private $user = "id8668068_root";
+    private $pass = "hajar";
     private $connexion;
      
   public function __construct()
@@ -43,6 +43,15 @@ class DAO
             "INSERT INTO player(name, score) VALUES (:nom, 0)"
         )->execute([
             'nom' => $nom,
+        ]);
+    }
+     public function addgame($player,$winner)
+    {
+        return $stmt = $this->connexion->prepare(
+            "INSERT INTO game(player, winner) VALUES (:nom, :winner)"
+        )->execute([
+            'nom' => $nom,
+            'winner' => winner
         ]);
     }
 
